@@ -19,7 +19,7 @@ public class Withdrawal
         System.out.print("Distribute $20 bills = " + distributeTwenties);
         System.out.print(", $10 bills = " + distributeTen);
         System.out.print(", $5 bills = " + distributeFive);
-        System.out.println(", $1 bills = " + distributeOne);
+        System.out.print(", $1 bills = " + distributeOne);
         System.out.println("\n");
 
         //Compute $100 withdrawal into appropriate bills
@@ -35,7 +35,7 @@ public class Withdrawal
         System.out.print("Distribute $20 bills = " + distributeTwenties);
         System.out.print(", $10 bills = " + distributeTen);
         System.out.print(", $5 bills = " + distributeFive);
-        System.out.println(", $1 bills = " + distributeOne);
+        System.out.print(", $1 bills = " + distributeOne);
         System.out.println("\n");
 
         //Compute $20 withdrawal into appropriate bills
@@ -51,7 +51,7 @@ public class Withdrawal
         System.out.print("Distribute $20 bills = " + distributeTwenties);
         System.out.print(", $10 bills = " + distributeTen);
         System.out.print(", $5 bills = " + distributeFive);
-        System.out.println(", $1 bills = " + distributeOne);
+        System.out.print(", $1 bills = " + distributeOne);
         System.out.println("\n");
 
         //Compute $17 withdrawal into appropriate bills
@@ -67,7 +67,7 @@ public class Withdrawal
         System.out.print("Distribute $20 bills = " + distributeTwenties);
         System.out.print(", $10 bills = " + distributeTen);
         System.out.print(", $5 bills = " + distributeFive);
-        System.out.println(", $1 bills = " + distributeOne);
+        System.out.print(", $1 bills = " + distributeOne);
         System.out.println("\n");
 
         //Compute $15 withdrawal into appropriate bills
@@ -83,7 +83,7 @@ public class Withdrawal
         System.out.print("Distribute $20 bills = " + distributeTwenties);
         System.out.print(", $10 bills = " + distributeTen);
         System.out.print(", $5 bills = " + distributeFive);
-        System.out.println(", $1 bills = " + distributeOne);
+        System.out.print(", $1 bills = " + distributeOne);
         System.out.println("\n");
 
         //Compute $2 withdrawal into appropriate bills
