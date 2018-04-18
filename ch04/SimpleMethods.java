@@ -1,10 +1,12 @@
 public class SimpleMethods
 {
-    public void main (String[] args)
+    public static void main (String[] args)
     {
         printCount(5);
         printSum(4,6);
         printSum(7,2);
+        printBoolean(true);
+        printBoolean(false);
     }
     public static void printCount(int count)
     {
@@ -14,5 +16,9 @@ public class SimpleMethods
     public static void printSum(int x, int y)
     {
         System.out.println(x+y);
+    }
+    public static void printBoolean(Boolean isStudent)
+    {
+        System.out.println("I am a student: "+ isStudent);
     }
 }
