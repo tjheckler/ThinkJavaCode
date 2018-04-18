@@ -2,7 +2,7 @@ public class IntExtremes
 {
     public static void main(String[] args)
     {
-        //Increas max positive int
+        //Increase max positive int
         int positiveInt = 2147483647;
         System.out.println(positiveInt);
         positiveInt++;
