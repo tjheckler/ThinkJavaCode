@@ -23,14 +23,6 @@ public class TimeConverter
 
         System.out.println(seconds + " Seconds = " + hours + " Hours " + minutes + " Minutes and " + secondsRemainder + " Seconds");
 
-
-       /* int distributeTwenties = withdrawal / twenty;
-        int twentyRemainder = withdrawal % twenty;
-        int distributeTen = twentyRemainder / ten;
-        int tenRemainder = twentyRemainder % ten;
-        int distributeFive = tenRemainder / five;
-        int fiveRemainder = tenRemainder % five;
-        int distributeOne = fiveRemainder / one;*/
     }
 
 }
