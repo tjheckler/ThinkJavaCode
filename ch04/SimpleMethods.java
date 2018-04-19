@@ -8,16 +8,18 @@ public class SimpleMethods
         printBoolean(true);
         printBoolean(false);
     }
-    public static void printCount(int count)
+    private static void printCount(int count)
     {
         System.out.println("The count is: " + count);
     }
 
-    public static void printSum(int x, int y)
+   private static void printSum(int x, int y)
     {
-        System.out.println(x+y);
+        int sum= x+y;
+        System.out.println(x + "+" + y);
+        System.out.println(x+"+"+y+"="+sum);
     }
-    public static void printBoolean(Boolean isStudent)
+   private static void printBoolean(Boolean isStudent)
     {
         System.out.println("I am a student: "+ isStudent);
     }
