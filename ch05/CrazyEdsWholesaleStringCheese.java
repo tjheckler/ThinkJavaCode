@@ -18,7 +18,8 @@ public class CrazyEdsWholesaleStringCheese
         if (size > 3)
         {
             System.out.println("Your order is too crazy, Please try a different size!");
-        } else
+        }
+        else
         {
             System.out.println("How many yards would you like to order?");
             amount = in.nextInt();
@@ -65,10 +66,7 @@ public class CrazyEdsWholesaleStringCheese
                     {
                         System.out.println("Your total cost will be $ " + withShipping);
                     }
-
             }
-
-
         }
     }
 }
