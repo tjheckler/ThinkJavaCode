@@ -70,9 +70,9 @@ public class CrazyEdsWholesaleStringCheese
                     else if ((amount < 75)&&(size == 2))
                     {
                         String header2 ="\n\tITEMIZED INVOICE:\n" ;
-                        header2 += "\n\t ize\tCost\tAmount\tshipping\tTotal\n";
+                        header2 += "\n\t Size\tCost\tAmount\tShipping\tTotal\n";
                         header2 += "\n\t----\t ----\t------\t--------\t-----\n";
-                        String invoice2 = "\n\t|"+size+"in |\t| $"+price2+" | \t| "+amount+"|\t| $ "+shipping2+"|\t\t| $"+withShipping+" |\n";
+                        String invoice2 = "\n\t|"+size+"in |\t| $"+price2+" | \t| "+amount+" |\t| $ "+shipping2+"|\t\t| $"+withShipping+" |\n";
                         System.out.println(header2 + invoice2);
                         //System.out.println("Your total cost will be $ " + withShipping);
                     }
@@ -95,9 +95,9 @@ public class CrazyEdsWholesaleStringCheese
                     else if ((amount < 25)&&(size ==3))
                     {
                         String header3 ="\n\tITEMIZED INVOICE:\n" ;
-                        header3 += "\n\tSize\tCost\tAmount\tshipping\tTotal\n";
+                        header3 += "\n\tSize\tCost\tAmount\tShipping\tTotal\n";
                         header3 += "\n\t----\t----\t------\t--------\t-----\n";
-                        String invoice3 = "\n\t| "+size+"in |\t| $"+price3+" | \t| "+amount+"\t| $ "+shipping3+" |\t\t| $ "+withShipping+" |\n";
+                        String invoice3 = "\n\t| "+size+"in |\t| $"+price3+" | \t| "+amount+" |\t | $ "+shipping3+" |\t\t| $ "+withShipping+" |\n";
                         System.out.println(header3 + invoice3);
                         //System.out.println("Your total cost will be $ " + withShipping);
                     }
