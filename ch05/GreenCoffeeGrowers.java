@@ -10,7 +10,7 @@ public class GreenCoffeeGrowers
 
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Do you commute by bus bike or car? Enter: true or false");
+        System.out.println("How do  you commute?");
         System.out.println("Please type (1) for bus, (2) for bike, (3) for car, or (4) Don't commute, proceed to checkout ");
         commute = in.nextInt();
         System.out.println("How many miles? ");
