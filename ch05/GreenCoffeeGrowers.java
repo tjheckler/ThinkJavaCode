@@ -5,7 +5,7 @@ public class GreenCoffeeGrowers
     public static void main(String[] args)
     {
         int commute;
-        int miles;
+        int  miles;
 
 
         Scanner in = new Scanner(System.in);
@@ -20,7 +20,7 @@ public class GreenCoffeeGrowers
         if (commute > 4 || commute < 1)
         {
             System.out.println("Invalid Selection, Please Try again!");
-        } else if (commute > 4)
+        } else if (commute < 4)
         {
             switch (commute)
             {
@@ -28,7 +28,7 @@ public class GreenCoffeeGrowers
                 case 1:
                     if (commute == 1)
                     {
-                        if (miles < 21)
+                        if (miles < 21&& miles > 0)
                         {
                             System.out.println("You receive a free coffee");
                         }
@@ -52,7 +52,7 @@ public class GreenCoffeeGrowers
                 case 2:
                     if (commute == 2)
                     {
-                        if (miles < 21)
+                        if (miles < 21 && miles < 0)
                         {
                             System.out.println("You receive a free coffee");
                         }
@@ -77,7 +77,7 @@ public class GreenCoffeeGrowers
                 case 3:
                     if (commute == 3)
                     {
-                        if (miles < 21)
+                        if (miles < 21 && miles > 0)
                         {
                             System.out.println("You receive a free coffee");
                         }
@@ -87,9 +87,14 @@ public class GreenCoffeeGrowers
                         }
                     }
                     //Chose not to take discount or doesn't commute
-                case 4: if (miles >0)
+                case 4:
+                    if ( miles >= 0)
                 {
                     System.out.println("Your Total is... ");
+                }
+                else
+                {
+                    System.out.println("Invalid selection! Pssst! you cant travel negative miles no matter the direction, Try again.");
                 }
             }
         }           //Rest of Program
