@@ -11,7 +11,7 @@ public class GreenCoffeeGrowers
         Scanner in = new Scanner(System.in);
 
         System.out.println("Do you commute by bus bike or car? Enter: true or false");
-        System.out.println("Please type (1) for bus, (2) for bike, (3) for car, or (4) to proceed to checkout ");
+        System.out.println("Please type (1) for bus, (2) for bike, (3) for car, or (4) Don't commute, proceed to checkout ");
         commute = in.nextInt();
         System.out.println("How many miles? ");
         miles = in.nextInt();
@@ -24,7 +24,7 @@ public class GreenCoffeeGrowers
         {
             switch (commute)
             {
-
+                        //Bus commute
                 case 1:
                     if (commute == 1)
                     {
@@ -32,11 +32,11 @@ public class GreenCoffeeGrowers
                         {
                             System.out.println("You receive a free coffee");
                         }
-                        else if (miles < 35 && miles >= 21)
+                        else if (miles >= 21 && miles < 35  )
                         {
                             System.out.println("You receive a free coffee and a 20% discount");
                         }
-                        else if (miles <= 50 && miles >= 35)
+                        else if (miles >= 35 && miles <= 50  )
                         {
                             System.out.println("You receive a free coffee and a 30% discount");
                         }
@@ -48,6 +48,7 @@ public class GreenCoffeeGrowers
 
                     }
 
+                    //Bike commute
                 case 2:
                     if (commute == 2)
                     {
@@ -55,15 +56,12 @@ public class GreenCoffeeGrowers
                         {
                             System.out.println("You receive a free coffee");
                         }
-                        else if (miles > 21 && miles < 30)
-                        {
-                            System.out.println("You receive a free coffee");
-                        }
-                        else if (miles > 30 && miles < 50)
+                        else if (miles > 21 && miles <= 30)
                         {
                             System.out.println("You receive a free coffee and a 10% discount");
                         }
-                        else if (miles < 50 && miles >= 31)
+
+                        else if (miles >= 31 && miles < 50)
                         {
                             System.out.println("You receive a free coffee and a 20% discount");
                         }
@@ -74,6 +72,8 @@ public class GreenCoffeeGrowers
                         }
 
                     }
+
+                    //Trick question? you said EVERYONE included car
                 case 3:
                     if (commute == 3)
                     {
@@ -82,6 +82,7 @@ public class GreenCoffeeGrowers
                             System.out.println("You receive a free coffee");
                         }
                     }
+                    //Chose not to take discount or doesn't commute
                 case 4:
                     System.out.println("Your Total is... ");
             }
