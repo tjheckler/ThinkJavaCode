@@ -20,7 +20,7 @@ public class GreenCoffeeGrowers
         if (commute > 4 || commute < 1)
         {
             System.out.println("Invalid Selection, Please Try again!");
-        } else
+        } else if (commute > 4)
         {
             switch (commute)
             {
@@ -81,17 +81,22 @@ public class GreenCoffeeGrowers
                         {
                             System.out.println("You receive a free coffee");
                         }
-                        else
+                        else if (miles >= 21)
                         {
                             System.out.println("Your Total is... ");
                         }
                     }
                     //Chose not to take discount or doesn't commute
-                case 4:
+                case 4: if (miles >0)
+                {
                     System.out.println("Your Total is... ");
+                }
             }
         }           //Rest of Program
-
+else
+    {
+        System.out.println("Your Total is... ");
+    }
 
     }
 
