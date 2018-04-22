@@ -81,6 +81,10 @@ public class GreenCoffeeGrowers
                         {
                             System.out.println("You receive a free coffee");
                         }
+                        else
+                        {
+                            System.out.println("Your Total is... ");
+                        }
                     }
                     //Chose not to take discount or doesn't commute
                 case 4:
