@@ -17,7 +17,7 @@ public class GreenCoffeeGrowers
         miles = in.nextInt();
 
 
-        if (commute > 4)
+        if (commute > 4 || commute < 1)
         {
             System.out.println("Invalid Selection, Please Try again!");
         } else
