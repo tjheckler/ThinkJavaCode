@@ -20,7 +20,7 @@ public class GreenCoffeeGrowers
         if (commute > 4 || commute < 1)
         {
             System.out.println("Invalid Selection, Please Try again!");
-        } else if (commute < 4)
+        } else if (commute <= 4)
         {
             switch (commute)
             {
