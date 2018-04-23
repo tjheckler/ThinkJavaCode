@@ -11,14 +11,14 @@ public class ForDoWhile2
     {
 
 
-        for (i = 10; i <= 100; i++)
+        for (i = 10; i <= 100; i+=10)
         {
             System.out.println(" Count up i = " + i);
 
         }
-        for (i = 100; i >= 10; i--)
+        for (i = 100; i >= 10; i-=10)
         {
-            System.out.println(" Count down = " + i);
+            System.out.println(" Count down i = " + i);
 
         }
     }
