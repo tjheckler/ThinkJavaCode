@@ -19,7 +19,7 @@ public class MultiplicationTable
             for (int j = 1; j <= tableSize; j++)
             {
 
-                System.out.format("%4d\t", i * j);
+                System.out.printf("%4d\t", i * j);
 
             }
 
