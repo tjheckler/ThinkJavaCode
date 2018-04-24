@@ -4,9 +4,11 @@ public class MultiplicationTable
     {
 
         int tableSize = 5;
-
+        //for loop
         printMultiplicationTable(tableSize);
+        //space between
         System.out.println();
+        //while loop
         printMultiplicationTable2(tableSize);
     }
 
