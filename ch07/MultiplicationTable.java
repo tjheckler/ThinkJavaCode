@@ -6,7 +6,8 @@ public class MultiplicationTable
         int tableSize = 5;
 
         printMultiplicationTable(tableSize);
-
+        System.out.println();
+        printMultiplicationTable2(tableSize);
     }
 
 
@@ -23,6 +24,26 @@ public class MultiplicationTable
 
             }
 
+            System.out.println();
+
+        }
+
+
+    }
+    public static void printMultiplicationTable2(int tableSize)
+    {
+        int i = 1;
+
+       while ( i <= tableSize  )
+        {
+            int j = 1;
+            while ( j <= tableSize )
+            {
+
+                System.out.printf("%4d\t", i * j);
+                j= j + 1;
+            }
+            i= i + 1;
             System.out.println();
 
         }
