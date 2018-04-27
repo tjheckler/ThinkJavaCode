@@ -7,7 +7,7 @@ public class DateTester
          currentDate = new Date(27,04,2018);
 
 
-        System.out.println(currentDate.getformattedDate());
+        System.out.println(currentDate.getFormattedDate());
     }
 
 

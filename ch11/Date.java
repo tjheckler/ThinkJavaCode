@@ -26,7 +26,7 @@ public class Date
         return year;
     }
 
-    public String getformattedDate()
+    public String getFormattedDate()
     {
         if (month < 10)
         {
