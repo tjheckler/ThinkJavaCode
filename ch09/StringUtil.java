@@ -24,6 +24,7 @@ public class StringUtil
         System.out.println(printCharacters("Goodbye"));
         System.out.println();
         printPhoneNumber("501-555-0100");
+        printPhoneNumber2("5015550100");
         System.out.println();
         findFirstE("Hello");
         findFirstE("Goodbye");
@@ -31,7 +32,11 @@ public class StringUtil
         System.out.println();
         System.out.println(isFinn("Finn"));
         System.out.println(isFinn("Jake"));
-
+        System.out.println();
+        System.out.println(reverse("Finn"));
+        System.out.println();
+        System.out.println(isPalindrome("palindrome"));
+        System.out.println(isPalindrome("not palindrome"));
 
     }
 
@@ -80,20 +85,33 @@ public class StringUtil
 
     private static void printPhoneNumber(String value)
     {
-        String phoneNumber = "501-555-0100";
 
-        System.out.print("Area Code: " + phoneNumber.substring(0, 3) + " ");
-        System.out.print("Exchange: " + phoneNumber.substring(4, 7) + " ");
-        System.out.println("Line Number: " + phoneNumber.substring(8, 12));
+
+        System.out.print("Area Code: " + value.substring(0, 3) + " ");
+        System.out.print("Exchange: " + value.substring(4, 7) + " ");
+        System.out.println("Line Number: " + value.substring(8, 12));
+        System.out.println();
+
+    }
+//9-S-1
+    private static void printPhoneNumber2(String value2)
+    {
+
+
+        System.out.print("Area Code: " + value2.substring(0, 3) + " ");
+        System.out.print("Exchange: " + value2.substring(3, 6) + " ");
+        System.out.println("Line Number: " + value2.substring(6, 10));
+        System.out.println();
+
     }
 
     private static void findFirstE(String e)
     {
-        String e1 = "Hello";
+        e = "Hello";
         String e2 = "Goodbye";
-        int index = e1.indexOf("e");
+        int index = e.indexOf("e");
         int index2 = e2.indexOf("e");
-        System.out.println("First e in " + e1 + " is at position: " + index);
+        System.out.println("First e in " + e + " is at position: " + index);
         System.out.println("First e in " + e2 + " is at position: " + index2);
     }
 
@@ -103,12 +121,31 @@ public class StringUtil
         if (value.equals("Finn"))
         {
             return true;
-        }
-        else
+        } else
         {
             return false;
         }
     }
+    // 9-S-2
+    private static String reverse(String reverse)
+    {
+            reverse  = "nniF";
 
+        return reverse;
+
+
+    }
+// 9-S-3
+    private static boolean isPalindrome(String value)
+    {
+
+        if (value.equals("palindrome"))
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
+    }
 }
 
