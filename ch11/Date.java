@@ -31,8 +31,11 @@ public class Date
         if (month < 10)
         {
             return getYear() + "-0" + getMonth() + "-" + getDay();
-        } else
-            return getYear() + "-" + getMonth() + "-" + getDay();
+        }
+        else if (day < 10)
+            return getYear() + "-" + getMonth() + "-0" + getDay();
 
+         else
+            return getYear() + "-" + getMonth() + "-" + getDay();
     }
 }
