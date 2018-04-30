@@ -19,7 +19,7 @@ public class FinishLine
 
     public void play()
     {
-        System.out.println("Starting Game");
+        System.out.println("Starting Game Finish Line");
 
         do
         {
