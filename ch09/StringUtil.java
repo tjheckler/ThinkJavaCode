@@ -12,7 +12,6 @@ public class StringUtil
         System.out.println();
         System.out.println(getFirstTwoCharacters("Hello"));
         System.out.println(getFirstTwoCharacters("Goodbye"));
-
         System.out.println();
         System.out.println(getLastTwoCharacters("Goodbye"));
         System.out.println(getLastTwoCharacters("Hello"));
@@ -28,7 +27,6 @@ public class StringUtil
         System.out.println();
         findFirstE("Hello");
         findFirstE("Goodbye");
-        System.out.println();
         System.out.println();
         System.out.println(isFinn("Finn"));
         System.out.println(isFinn("Jake"));
