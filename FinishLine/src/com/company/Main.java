@@ -6,7 +6,11 @@ public class Main {
     {
 
         FinishLine game = new FinishLine();
-        game.play();
+        for (int i = 0; i< 10000; i++)
+        {
+            game.play();
+            game.reset();
+        }
     }
 
 

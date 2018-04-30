@@ -5,7 +5,7 @@ public class Peg
    private int position;
     public  Peg()
     {
-      position = 1;
+     reset();
 
     }
 
@@ -24,5 +24,9 @@ public class Peg
     public boolean isWinner()
     {
         return position >= 10;
+    }
+    public void reset()
+    {
+        position = 1;
     }
 }

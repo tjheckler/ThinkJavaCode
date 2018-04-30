@@ -37,8 +37,6 @@ public class FinishLine
         {
             System.out.println("Red Wins!");
         }
-
-
     }
 
     private void takeTurn(Peg peg)
@@ -57,5 +55,10 @@ public class FinishLine
     {
         System.out.println("Blue peg at: "+bluePeg.getPosition());
         System.out.println("Red peg at: "+redPeg.getPosition());
+    }
+    public void reset()
+    {
+        bluePeg.reset();
+        redPeg.reset();
     }
 }
