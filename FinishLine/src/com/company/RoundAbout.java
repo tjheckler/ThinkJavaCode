@@ -18,7 +18,7 @@ public class RoundAbout
 
     public void play()
     {
-        System.out.println("Starting Game");
+        System.out.println("Starting Game Round About");
 
         do
         {
