@@ -165,7 +165,7 @@ public class StringUtil
     private static boolean allLetters(String[] wordArray)
     {
 
-        char[] word = "learn".toCharArray();
+        String[] word = "learn".split("");
 
         for (int i = 0; i < wordArray.length - 1; i++)
         {
