@@ -12,7 +12,7 @@ public class IntergalacticVendingMachines
     private static void run()
     {
         Scanner in = new Scanner(System.in);
-        int choice;
+        String choice;
         //Populate Food Array
         Food driedSushi = new Food(" Freeze Dried Sushi", 0);
         Food brainBlast = new Food(" Spock's Brain Blast", 1);
@@ -35,61 +35,70 @@ public class IntergalacticVendingMachines
             System.out.println("Please Select an Item:");
             printMenu(meal);
             System.out.println();
-            choice = in.nextInt();
+            choice = in.nextLine();
             System.out.println();
-            int selection = choice;
-            /*------------------------------------------------------------------*/
+            String[] selection = choice.split("");
 
+            if (choice.contains("99"))
+            {
 
+            }
 
-                if (choice <= meal.length-1 && choice >=0)
+            else
+            {
+
+                for (String number : selection)
                 {
-                    System.out.println("Thank you for choosing: " + meal[selection].getName());
-                    System.out.println();
-                    counter[choice]++;
 
+                    int magicNumber = Integer.parseInt(number);
+                    int bufferVariable = Integer.parseInt(number);
+                    if (bufferVariable < 0 || bufferVariable > meal.length-1)
+                    {break;}
 
-                    System.out.println("Items sold so far:");
-                    printSales(counter, meal);
-                    System.out.println();
+                    System.out.println("Thank you for choosing: " + meal[magicNumber].getName());
+                    counter[magicNumber]++;
 
                 }
-
-
-            }
-
-            while (choice != 99) ;
-            {
-
-                System.out.println();
-                System.out.println("Final Total Sales");
+                System.out.println("Items sold so far:");
                 printSales(counter, meal);
                 System.out.println();
-                System.out.println("GoodBye!");
             }
         }
-
-        public static void printMenu (Food[]meals)
+        while(!choice.contains("99") );
         {
-            //Prints Menu for selection
-            for (Food meal : meals)
-            {
-                System.out.println(meal.getId() + ") " + meal.getName());
+            System.out.println();
+            System.out.println("Final Total Sales");
+            printSales(counter, meal);
+            System.out.println();
+            System.out.println("GoodBye!");
 
-            }
-        }
-
-        public static void printSales ( int[] counter, Food[] meal)
-        {
-            for (int i = 0; i <= counter.length - 1; i++)
-            {
-
-
-                System.out.println(counter[i] + " " + meal[i].getName());
-
-
-            }
         }
 
 
     }
+
+
+    public static void printMenu(Food[] meals)
+    {
+        //Prints Menu for selection
+        for (Food meal : meals)
+        {
+            System.out.println(meal.getId() + ") " + meal.getName());
+
+        }
+    }
+
+    public static void printSales(int[] counter, Food[] meal)
+    {
+        for (int i = 0; i <= counter.length - 1; i++)
+        {
+
+
+            System.out.println(counter[i] + " " + meal[i].getName());
+
+
+        }
+    }
+
+
+}
