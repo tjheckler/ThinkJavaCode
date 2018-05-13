@@ -3,8 +3,7 @@ public class Food
 
     private String name;
     private int id;
-    public int choice;
-    private int selection;
+
 
 
     public Food (String name, int id)
