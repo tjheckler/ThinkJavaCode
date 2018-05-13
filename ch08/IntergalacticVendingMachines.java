@@ -4,24 +4,25 @@ public class IntergalacticVendingMachines
 {
     public static void main(String[] args)
     {
-        Food driedSushi = new Food(" Freeze Dried Sushi", 1);
-        Food brainBlast = new Food(" Spock's Brain Blast", 2);
-        Food alienAsparagus = new Food(" Alien Asparagus", 3);
+        //Populate Food Array
+        Food driedSushi = new Food(" Freeze Dried Sushi", 0);
+        Food brainBlast = new Food(" Spock's Brain Blast", 1);
+        Food alienAsparagus = new Food(" Alien Asparagus", 2);
 
         Food[] meal = new Food[3];
         meal[0] = driedSushi;
         meal[1] = brainBlast;
         meal[2] = alienAsparagus;
 
+
+        //Counter Array
+        int[] counter = new int[3];
+        counter[0] = 0;
+        counter[1] = 0;
+        counter[2] = 0;
+
+        //Print Food Menu Start of program
         printMenu(meal);
-
-         int[] counter = new int[3];
-         counter[0] = 0;
-         counter[1] = 1;
-         counter[2] = 2;
-
-
-        //if select # 99
 
 
     }
@@ -39,31 +40,32 @@ public class IntergalacticVendingMachines
         {
             System.out.println(meal.getId() + ") " + meal.getName());
         }
+
         System.out.println();
         choice = in.nextInt();
         System.out.println();
+        int selection = choice;
+
+
+
 
         /*------------------------------------------------------------------*/
-
-        int selection = choice;
 
         if (choice < 4)
         {
             System.out.println("Thank you for choosing: " + meals[selection].getName());
-        }
-
-        if (choice >= 4 && choice < 99 || choice >99)
-        {
-            System.out.println("Invalid Selection please try again");
-
         }
         if (choice == 99)
         {
             System.out.println("Counter goes here");
 
         }
-
         /*------------------------------------------------------------------*/
+
+    }
+
+    public static void printSales(int sales)
+    {
 
     }
 
