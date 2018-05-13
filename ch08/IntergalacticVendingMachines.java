@@ -8,7 +8,8 @@ public class IntergalacticVendingMachines
     {
         run();
     }
-    private static void run ()
+
+    private static void run()
     {
         Scanner in = new Scanner(System.in);
         int choice;
@@ -40,53 +41,55 @@ public class IntergalacticVendingMachines
             /*------------------------------------------------------------------*/
 
 
-            if (choice <= (meal.length - 1) && choice >= 0)
-            {
-                System.out.println("Thank you for choosing: " + meal[selection].getName());
-                System.out.println();
-                counter[choice]++;
-                System.out.println("Items sold so far:");
-                printSales(counter,meal);
-                System.out.println();
 
-            } else
-            {
-                //do nothing
+                if (choice <= meal.length-1 && choice >=0)
+                {
+                    System.out.println("Thank you for choosing: " + meal[selection].getName());
+                    System.out.println();
+                    counter[choice]++;
+
+
+                    System.out.println("Items sold so far:");
+                    printSales(counter, meal);
+                    System.out.println();
+
+                }
+
+
             }
 
+            while (choice != 99) ;
+            {
+
+                System.out.println();
+                System.out.println("Final Total Sales");
+                printSales(counter, meal);
+                System.out.println();
+                System.out.println("GoodBye!");
+            }
         }
 
-        while (choice !=  99);
+        public static void printMenu (Food[]meals)
         {
+            //Prints Menu for selection
+            for (Food meal : meals)
+            {
+                System.out.println(meal.getId() + ") " + meal.getName());
 
-            System.out.println();
-            System.out.println("Final Total Sales");
-            printSales(counter, meal);
-            System.out.println();
-            System.out.println("GoodBye!");
+            }
         }
-    }
-    public static void printMenu(Food[] meals)
-    {
-        //Prints Menu for selection
-        for (Food meal : meals)
-        {
-            System.out.println(meal.getId() + ") " + meal.getName());
 
-        }
-    }
-
-    public static void printSales(int[] counter, Food[] meal)
-    {
-        for (int i = 0; i <= counter.length-1; i++ )
+        public static void printSales ( int[] counter, Food[] meal)
         {
+            for (int i = 0; i <= counter.length - 1; i++)
+            {
 
 
                 System.out.println(counter[i] + " " + meal[i].getName());
 
 
+            }
         }
+
+
     }
-
-
-}
