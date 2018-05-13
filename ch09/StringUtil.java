@@ -1,3 +1,6 @@
+import com.sun.xml.internal.fastinfoset.util.CharArray;
+import com.sun.xml.internal.fastinfoset.util.CharArrayString;
+
 public class StringUtil
 {
     public static void main(String[] args)
@@ -33,8 +36,16 @@ public class StringUtil
         System.out.println();
         System.out.println(reverse("Finn"));
         System.out.println();
-        System.out.println(isPalindrome("palindrome"));
-        System.out.println(isPalindrome("not palindrome"));
+        System.out.println(isPalindrome("Finn"));
+        System.out.println(isPalindrome("dad"));
+        System.out.println();
+       String[] wordArray = new String[4];
+        wordArray[0]="pickle";
+        wordArray[1]="learn";
+        wordArray[2]="education";
+        wordArray[3]="coding";
+
+        System.out.println("The result is "+allLetters(wordArray));
 
     }
 
@@ -91,7 +102,8 @@ public class StringUtil
         System.out.println();
 
     }
-//9-S-1
+
+    //9-S-1
     private static void printPhoneNumber2(String value2)
     {
 
@@ -124,26 +136,53 @@ public class StringUtil
             return false;
         }
     }
+
     // 9-S-2
-    private static String reverse(String reverse)
+    private static String reverse(String word)
     {
-            reverse  = "nniF";
+
+        String reverse = new StringBuffer(word).reverse().toString();
 
         return reverse;
 
 
     }
-// 9-S-3
+
+    // 9-S-3
     private static boolean isPalindrome(String value)
     {
-
-        if (value.equals("palindrome"))
+        String reverse = new StringBuffer(value).reverse().toString();
+        if (value.equals(reverse))
         {
             return true;
         } else
         {
             return false;
         }
+    }
+
+///don't think this is working correctly
+    private static boolean allLetters(String[] wordArray)
+    {
+
+        char[] word = "learn".toCharArray();
+
+        for (int i = 0; i < wordArray.length - 1; i++)
+        {
+            for (String words : wordArray)
+            {
+                if (words.startsWith(word.toString()))
+                {
+                    return true;
+                } else
+                {
+                    return false;
+                }
+
+            }
+
+        }
+        return false;
     }
 }
 
